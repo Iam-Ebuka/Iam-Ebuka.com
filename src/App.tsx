@@ -53,7 +53,7 @@ const App: React.FC = () => {
               <div className="flex flex-col items-center font-bold space-y-1 text-[12px] text-gray-800"><img src={myJavaScript} alt="javaScript svg" className="w-[50px]" /><p>JavaScript</p></div>
               <div className="flex flex-col items-center font-bold space-y-1 text-[12px] text-gray-800"><img src={myTypeScript} alt="typeScript" className="w-[50px]" /><p>TypeScript</p></div>
               <div className="flex flex-col items-center font-bold space-y-2 text-[12px] text-gray-800"><img src={myReactSvg} alt="React svg" className="w-[50px]"/><p>React.js</p></div>
-              <div className="flex flex-col items-center font-bold space-y-1 text-[12px] text-gray-800"><img src={myNextjs} alt="Nextjs svg" className="w-[50px]"/><p>Node.js</p></div>
+              <div className="flex flex-col items-center font-bold space-y-1 text-[12px] text-gray-800"><img src={myNextjs} alt="Nextjs svg" className="w-[50px]"/><p>Nextjs</p></div>
               <div className="flex flex-col items-center font-bold space-y-1 text-[12px] text-gray-800"><img src={mySqlSvg} alt="MySql svg" className="w-[50px]"/><p>MySQL</p></div>
               <div className="flex flex-col items-center font-bold space-y-1 text-[12px] text-gray-800"><img src={myTailwind} alt="Tailwind svg" className="w-[50px]"/><p>TailwindCSS</p></div>
               <div className="flex flex-col items-center font-bold space-y-2 text-[12px] text-gray-800"><img src={myReactSvg} alt="React Native svg" className="w-[50px]"/><p>React Native</p></div>
