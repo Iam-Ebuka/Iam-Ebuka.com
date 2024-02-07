@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   return (
-    <div className='bg-black container px-50px mx-auto flex justify-between items-center h-[60px] text-white'>
-      <div className='font-bold text-[20px]'>
+    <div className='px-[70px] mx-auto flex justify-between items-center w-screen h-[80px] shadow'>
+      <div className='font-bold text-[20px] lg:text-[22px]'>
         <Link to="/">Ebuka.code</Link>
       </div>
-      <div className='space-x-3 font-[500] hidden lg:block'>
+      <div className='space-x-4 font-bold hidden lg:block lg:text-[18px]'>
         <Link to="/">Home</Link>
-        <a>About</a>
-        <a>Projects</a>
+        <a href='#About'>About</a>
+        <a href='#Project'>Projects</a>
         <Link to="/contact">Contact-me</Link>
       </div>
       <div className='lg:hidden'>

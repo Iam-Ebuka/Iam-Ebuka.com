@@ -9,7 +9,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIntro(false);
-    }, 14000)
+    }, 13998)
     return ()=> clearTimeout(timeout)
   }, [])
 
@@ -19,11 +19,11 @@ const App: React.FC = () => {
     ( 
       <Intro />
     ) : (
-      <div className="bg-[#0e0b0b]"> 
+      <div className="h-screen "> 
         <Navbar />
-        <div>
-          <h1 className='text-[#fff] font-extrabold text-[30px]'>FRONT-END DEVELOPER</h1>
-          <h2>Let's build from here</h2>
+        <div className=" flex flex-col items-center mt-[200px] container mx-auto">
+          <h1 className='font-extrabold text-[30px]'>FRONT-END DEVELOPER</h1>
+          <h2 className="">Let's build from here</h2>
         </div> 
       </div> 
     )}
