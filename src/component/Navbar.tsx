@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+
 const Navbar: React.FC = () => {
   return (
-    <div className='px-[70px] mx-auto flex justify-between items-center w-screen h-[80px] shadow'>
+    <div className='mx-auto flex justify-between items-center h-[80px]'>
       <div className='font-bold text-[20px] lg:text-[22px]'>
         <Link to="/">Ebuka.code</Link>
       </div>
