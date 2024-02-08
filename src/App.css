@@ -64,8 +64,13 @@
   }
   
   .Isaac {
-    position: fixed;
-    top: 10%;
-    left: -400px;
+    position: absolute;
+    left: -40px;
+    white-space: nowrap;
+  }
+
+  .Ebuka {
+    position: absolute;
+    right: -40px;
     white-space: nowrap;
   }

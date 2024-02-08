@@ -14,6 +14,7 @@ import myNextjs from "./assets/nextjs-svgrepo-com.svg"
 const App: React.FC = () => {
   const [intro, setIntro] = useState<boolean>(true)
   const myNameRef = useRef<HTMLHeadingElement>(null)
+  const mySecondRef = useRef<HTMLHeadingElement>(null)
   
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -24,11 +25,14 @@ const App: React.FC = () => {
 
    useEffect(() =>{
     window.onscroll = () => {
-      let pos: string | number = window.scrollY - 400;
-      const nameElement = myNameRef.current;
-      if (nameElement) {
-        nameElement.style.left = `${pos}px`
+      let pos: string | number = window.scrollY - 40;
+      const leftElement = myNameRef.current;
+      const rightScroll = mySecondRef.current;
+      if (leftElement && rightScroll) {
+        leftElement.style.left = `${pos}px`
+        rightScroll.style.right = `${pos}px`
       }
+      
     }
    }, [])
 
@@ -41,10 +45,11 @@ const App: React.FC = () => {
     ) : (
       <div className="h-[500vh] container mx-auto"> 
         <Navbar />
-        <div className="flex relative flex-col items-center w-full pt-[50px] bg-green-200 h-screen overflow-hidden">
+        <div className="flex relative flex-col items-center w-full pt-[50px] h-screen overflow-hidden">
           <h4 className="text-[16px] text-gray-800 font-bold z-10">Hello, I am</h4>
           <h2 className="lg:text-[30px] text-[20px] text-green-800 font-bold z-10">ChukwuEbuka Odiah</h2>
-          <h2 ref={myNameRef} className="Isaac text-[50px] lg:text-[100px] z-0 text-[#ffffff] font-extrabold">Hire Me!</h2>
+          <h2 ref={myNameRef} className="Isaac text-[50px] lg:text-[100px] top-[20%] lg:top-[10%] z-0 text-[#bcbcbc] font-extrabold">Let's build it!</h2>
+          <h2 ref={mySecondRef} className="Ebuka text-[50px] lg:text-[100px] top-[30%] lg:top-[23%] z-0 text-[#bcbcbc] font-extrabold">Shall we!</h2>
           <h1 className='font-extrabold text-gray-800 z-10 text-[16px]'>SOFTWARE DEVELOPER</h1>
           {/* <h2 className="font-bold">Let's build it together</h2> */}
           <div className="mt-[50px] z-20">
