@@ -7,6 +7,7 @@ import Github from "./assets/github.json"
 import Linkedin from "./assets/linkedin-2.json"
 import Twitter from "./assets/twitter (1).json"
 import Mytools from "./component/Mytools"
+import Projects from "./Projects"
 
 
 
@@ -42,9 +43,9 @@ const App: React.FC = () => {
     ( 
       <Intro />
     ) : (
-      <div className="h-[500vh] container mx-auto"> 
+      <div className="container mx-auto"> 
         <Navbar />
-        <div className="h-screen relative max-w-[1000px] mx-auto ">
+        <div className="relative max-w-[1000px] mx-auto ">
           <div className="mt-[50px] grid lg:grid-cols-2 grid-cols-1 grid-rows-2 lg:grid-rows-1">
             <div className="flex flex-col items-center lg:items-start overflow-hidden justify-center">
               <h4 className="absolute text-[100px] lg:-left-[40px] left-1 top-[-60px] -rotate-12 text-[#dddddd] font-extrabold">Hi</h4>
@@ -78,6 +79,7 @@ const App: React.FC = () => {
           </div>
         </div>
           <Mytools />
+          <Projects />
         
       </div> 
     )}
