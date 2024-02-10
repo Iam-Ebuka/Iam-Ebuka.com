@@ -21,7 +21,6 @@ const Mytools: React.FC = () => {
               <div className="flex flex-col items-center font-bold space-y-1 text-[12px] text-gray-800"><img src={myTailwind} alt="Tailwind svg" className="bg-[#292929]  rounded-lg w-[50px]"/><p>TailwindCSS</p></div>
               <div className="flex flex-col items-center font-bold space-y-2 text-[12px] text-gray-800"><img src={myReactSvg} alt="React Native svg" className="bg-[#292929]  rounded-lg w-[50px]"/><p>React Native</p></div>
               <div className="flex flex-col items-center font-bold space-y-1 text-[12px] text-gray-800"><img src={myNodejs} alt="Nodejs svg" className="w-[50px]"/><p>Node.js</p></div>
-              
             </div>
         </div>
   )
