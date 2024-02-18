@@ -1,5 +1,5 @@
 import React from 'react'
-import myReactSvg from "../assets/react.svg"s
+import myReactSvg from "../assets/react.svg
 import mySqlSvg from "../assets/mysql-logo-svgrepo-com.svg"
 import myJavaScript from "../assets/javascript-logo-svgrepo-com.svg"
 import myTypeScript from "../assets/typescript-svgrepo-com.svg"
